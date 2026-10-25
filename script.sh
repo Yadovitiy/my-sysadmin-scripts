@@ -1,6 +1,6 @@
 #! /bin/bash
 
-N=60
+N=5
 LOGFILE="monitor.log"
 
 
