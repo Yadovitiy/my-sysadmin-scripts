@@ -1,9 +1,10 @@
 #! /bin/bash
 
-N = 60
+N=60
 
 while true; do
-	# Здесь будет сбор метрик
-	Sleep $N
+    # Здесь будет сбор метрик
+    echo "--- $(date '+%Y-%m-%d %H:%M:%S') ---" >> monitor.log	
+    sleep $N
 
 done
