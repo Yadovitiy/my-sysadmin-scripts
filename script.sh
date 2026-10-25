@@ -3,8 +3,12 @@
 N=60
 
 while true; do
-    # Здесь будет сбор метрик
-    echo "--- $(date '+%Y-%m-%d %H:%M:%S') ---" >> monitor.log	
+    {
+        echo "--- $(date '+%Y-%m-%d %H:%M:%S') ---" 
+        free -h
+        df -h
+        uptime
+        
+    } >> monitor.log
     sleep $N
-
 done
